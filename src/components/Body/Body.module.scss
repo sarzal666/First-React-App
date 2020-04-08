@@ -1,0 +1,15 @@
+@import '../GlobalStyles/var.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.main {
+    height: calc(100vh - #{$appHeaderHeight} - #{$appFooterHeight});
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 50px;
+}

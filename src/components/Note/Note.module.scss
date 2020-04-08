@@ -1,0 +1,61 @@
+@import '../GlobalStyles/var.scss';
+
+.note {
+    width: 75%;
+    height: 100%;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.280);
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    &__headerAlign {
+        margin-top: 20px;
+        position: relative;
+        grid-row: 1 / 2;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: $headerLogoColor;
+            height: 3px;
+            width: 50%;
+            margin: 10px auto 0;
+        }
+    }
+
+    &__CloseBtn {
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        position: absolute;
+        right: 30px;
+        top: 0;
+    }
+
+    &__noteAlign {
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__textarea {
+        width: 80%;
+        height: 80%;
+        resize: none;
+        line-height: 25px;
+        padding: 15px;
+        overflow-y: auto;
+
+        font: {
+            family: 'Roboto',
+                sans-serif;
+            size: 18px;
+        }
+    }
+}

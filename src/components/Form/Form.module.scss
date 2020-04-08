@@ -1,0 +1,33 @@
+@import '../GlobalStyles/var.scss';
+.form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    height: 20px;
+    border-bottom: 1px solid $headerLogoColor;
+    &::placeholder {
+        color: rgb(175, 175, 175);
+        font-family: -apple-system;
+    }
+}
+label {
+    text-align: left;
+}
+.header {
+    color: $headerLogoColor;
+    margin-bottom: 20px;
+}
+.textarea {
+    @extend .input;
+    height: 60px;
+    resize: none;
+}

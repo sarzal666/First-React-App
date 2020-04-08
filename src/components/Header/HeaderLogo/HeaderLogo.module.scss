@@ -1,0 +1,17 @@
+
+@import '../../GlobalStyles/var.scss';
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.logoAlign {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+span {
+    font-size: 2em;
+    font-weight: bold;
+    color: $headerLogoColor;
+}

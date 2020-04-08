@@ -1,0 +1,9 @@
+@import './../GlobalStyles/var.scss';
+.List {
+    list-style: none;
+    margin: 20px 0 20px 40px;
+    // border-right:1px solid black;
+    overflow-y: auto;
+}
+
+
